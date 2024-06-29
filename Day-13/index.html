@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #navbar {
+        color: white;
+        height: 60px;
+        background-color: #252f25;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+      }
+      #leftDiv {
+        display: flex;
+        /* border: 1px solid white; */
+        width: 22%;
+        height: 80%;
+        justify-content: space-between;
+        /* border: 1px solid blue; */
+      }
+      #logoDiv {
+        width: 44%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #logoDiv:hover {
+        border: 1px solid white;
+        border-radius: 2px;
+      }
+      #addressDiv {
+        width: 54%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+      }
+      #addressDiv:hover {
+        border: 1px solid white;
+        border-radius: 2px;
+      }
+
+      #addressP {
+        color: rgb(205, 204, 204);
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      #addressh5 {
+        font-size: 18px;
+        letter-spacing: 6px;
+      }
+
+      #centerDiv {
+        width: 50%;
+        border: 1px solid white;
+        display: flex;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+      }
+      #rightDiv {
+        width: 26%;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="leftDiv">
+        <div id="logoDiv">
+          <img
+            style="height: 78%; width: 84%"
+            src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White.png"
+            alt="Amazon"
+          />
+        </div>
+        <div id="addressDiv">
+          <span class="material-symbols-outlined"> location_on </span>
+          <div>
+            <p id="addressP">Delivering to Mumbai 400070</p>
+            <h5>Update Location</h5>
+          </div>
+        </div>
+      </div>
+      <div id="centerDiv">
+        <div>Section</div>
+        <div>Input</div>
+        <div>Icon</div>
+      </div>
+      <div id="rightDiv">Profile</div>
+    </div>
+  </body>
+</html>
