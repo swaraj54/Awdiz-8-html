@@ -73,16 +73,148 @@
 
       #centerDiv {
         width: 50%;
-        border: 1px solid white;
+        /* border: 4px solid red; */
         display: flex;
-        height: 80%;
-        display: flex;
+        height: 66%;
         align-items: center;
         border-radius: 8px;
       }
+
+      #centerDiv:focus-within {
+        border: 3px solid #faaa42;
+      }
+
+      /* input[type="text"]:focus {
+        border: 2px solid #faaa42;
+      } */
+
+      #centerSection {
+        height: 100%;
+        width: 8%;
+        /* border: 1px solid red; */
+        border-radius: 6px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #e6e6e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgb(190, 190, 190);
+      }
+      #centerSection:hover {
+        background-color: #d5d5d5;
+      }
+
+      #centerSection p,
+      span {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+      #centerSearch {
+        height: 100%;
+        width: 84%;
+        /* border: 1px solid white; */
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+      }
+      #centerSearch input {
+        height: 24px;
+        width: 96%;
+        margin: auto;
+        font-size: 16px;
+        border: none;
+        outline: none;
+      }
+
+      #centerIcon {
+        height: 100%;
+        width: 8%;
+        /* border: 1px solid white; */
+        background-color: #febd69;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      #centerIcon:hover {
+        background-color: #faaa42;
+      }
+      #centerIcon span {
+        font-size: 30px;
+        color: black;
+      }
+
       #rightDiv {
         width: 26%;
-        border: 1px solid white;
+        height: 100%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: space-around;
+      }
+      #rightLang {
+        width: 18%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #rightLang > p {
+        margin-left: 6px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      #rightLang > span {
+        color: rgb(206, 206, 206);
+      }
+
+      #rightAccount {
+        width: 30%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+      }
+      #rightAccount p {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      #rightAccount span {
+        margin-top: -6px;
+      }
+      #rightOrders {
+        width: 16%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #rightOrders p {
+        font-size: 12px;
+      }
+      #rightCart {
+        width: 22%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #rightCart span {
+        color: white;
+      }
+
+      #rightCart span:nth-child(1) {
+        font-size: 36px;
+      }
+      #rightCart span:last-child {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 16px;
       }
     </style>
   </head>
@@ -105,11 +237,43 @@
         </div>
       </div>
       <div id="centerDiv">
-        <div>Section</div>
-        <div>Input</div>
-        <div>Icon</div>
+        <div id="centerSection">
+          <p>All</p>
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+        <div id="centerSearch">
+          <input type="text" placeholder="Search Amazon.in" />
+        </div>
+        <div id="centerIcon">
+          <span class="material-symbols-outlined"> search </span>
+        </div>
       </div>
-      <div id="rightDiv">Profile</div>
+      <div id="rightDiv">
+        <div id="rightLang">
+          <img
+            style="height: 14px; width: 20px"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+            alt="flag"
+          />
+          <p>EN</p>
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+        <div id="rightAccount">
+          <p>Hello, sign in</p>
+          <div style="display: flex">
+            <h5>Account & List</h5>
+            <span class="material-symbols-outlined"> arrow_drop_down </span>
+          </div>
+        </div>
+        <div id="rightOrders">
+          <p>Returns</p>
+          <h5>& Orders</h5>
+        </div>
+        <div id="rightCart">
+          <span class="material-symbols-outlined"> shopping_cart </span>
+          <span>Cart</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
