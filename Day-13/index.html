@@ -216,6 +216,119 @@
         font-weight: 700;
         margin-top: 16px;
       }
+
+      #body {
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+      }
+      #filters {
+        width: 14%;
+        /* border: 2px solid black; */
+        height: 1000px;
+      }
+      #products {
+        width: 82%;
+        /* border: 2px solid black; */
+      }
+      #products > h3 {
+        padding: 10px 0px;
+      }
+      #productsParent {
+        width: 100%;
+        /* border: 5px solid red; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .productCard {
+        border: 1px solid rgb(215, 215, 215);
+        height: 566px;
+        width: 19%;
+        margin-bottom: 14px;
+        border-radius: 10px;
+      }
+
+      .imgCard {
+        width: 100%;
+        height: 54%;
+        display: flex;
+        justify-content: center;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+      }
+      .h-w-100 {
+        padding-top: 24px;
+        width: 42%;
+        height: 90%;
+      }
+      .proName {
+        padding: 10px;
+        padding-bottom: 4px;
+      }
+      .ratingDiv {
+        display: flex;
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      .col-yellow {
+        color: #febd69;
+      }
+      .ratingDiv p {
+        color: #387689;
+        font-size: 16px;
+      }
+      .buyHistory {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+        color: rgb(109, 109, 109);
+      }
+      .priceDiv {
+        display: flex;
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+      }
+      .priceDiv span {
+        font-size: 14px;
+        color: black;
+      }
+      .priceDiv p:nth-child(2) {
+        font-size: 24px;
+      }
+      .priceDiv p:nth-child(3) {
+        font-size: 12px;
+        color: rgb(109, 109, 109);
+      }
+      .priceDiv p:nth-child(3) span {
+        color: rgb(109, 109, 109);
+        text-decoration: line-through;
+      }
+      .offer {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+        padding-bottom: 0px;
+      }
+      .emi {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+        color: rgb(109, 109, 109);
+      }
+      .delivery {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+      }
+      .install {
+        padding: 10px;
+        font-size: 14px;
+        padding-top: 0px;
+      }
     </style>
   </head>
   <body>
@@ -272,6 +385,354 @@
         <div id="rightCart">
           <span class="material-symbols-outlined"> shopping_cart </span>
           <span>Cart</span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <div id="filters">Left</div>
+      <div id="products">
+        <h3>Results</h3>
+        <div id="productsParent">
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
+              HED-171RS-P, Red Steel
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+              <p>5,344</p>
+            </div>
+            <p class="buyHistory">1K+ bought in past month</p>
+            <div class="priceDiv">
+              <span class="material-symbols-outlined"> currency_rupee </span>
+              <p>16,790</p>
+              <p>M.R.P: <span>₹22,999</span></p>
+            </div>
+            <p class="offer">(27% off)</p>
+            <p class="emi">Save extra with No Cost EMI</p>
+            <p class="delivery">
+              FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+            </p>
+            <p class="install">Service: Installation</p>
+          </div>
         </div>
       </div>
     </div>
