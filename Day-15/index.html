@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness</title>
+    <style>
+      #parent {
+        width: 100%;
+        border: 4px solid black;
+      }
+
+      /* min-width -> starting 
+      max-width -> ending */
+
+      /* @media screen and (min-width: 450px) {
+        #parent {
+          border: 4px solid blue;
+        }
+      } */
+      /* @media screen and (max-width: 750px) {
+        #parent {
+          border: 4px solid red;
+        }
+      } */
+       /* Mobile view */
+      @media screen and (min-width : 350px) and (max-width: 750px) { 
+        #parent {
+          border: 4px solid red;
+        }
+      }
+      
+      /* Tablet view */
+      @media screen and (min-width : 750px) and (max-width: 1150px) {
+        #parent {
+          border: 4px solid blue;
+        }
+      }
+      
+       /* Laptop view */
+      @media screen and (min-width : 1150px) and (max-width: 1550px) {
+        #parent {
+          border: 4px solid green;
+        }
+      }
+      
+       /* Tv view */
+      @media screen and (min-width : 1550px) {
+        #parent {
+          border: 4px solid yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>
